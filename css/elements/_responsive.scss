@@ -1,0 +1,392 @@
+/* GRID ============================================================ */
+
+// classes
+.image-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-responsive {
+    max-width: 750px;
+}
+
+// container
+.container {
+    width: 90%;
+    position: relative;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+// self clearing
+.container:after,
+.container-fluid:after,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// column
+.column {
+    position: relative;
+    float: left;
+    width: 97%;
+    margin: 0 1.5%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one-half-phone.column {
+    width: 47%;
+}
+
+.one-third-phone.column {
+    width: 30.33%;
+}
+
+.two-third-phone.column {
+    width: 63.67%;
+}
+
+.one-fourth-phone.column {
+    width: 22%;
+}
+
+.three-fourth-phone.column {
+    width: 72%;
+}
+
+.one-sixth-phone.column {
+    width: 13.67%;
+}
+
+.five-sixth-phone.column {
+    width: 80.33%;
+}
+
+.one-eighth-phone.column {
+    width: 9.5%;
+}
+
+.seven-eighth-phone.column {
+    width: 84.5%;
+}
+
+// display
+.display-phone,
+.display-tablet,
+.display-laptop,
+.display-desktop {
+    display: none !important;
+}
+
+
+/* RESPONSIVE ============================================================ */
+// phone
+@media (max-width: 499px) {
+
+    // display
+    .display-phone {
+        display: inline-block !important;
+    }
+}
+
+// tablet
+@media (min-width: 500px) and (max-width: 999px) {
+
+    // container
+    .container {
+        width: 85%;
+    }
+
+    // column
+    // (auto 1 phone, 1/2 tablet, 1/3 laptop, 1/4 desktop)
+    .fluid.column {
+        width: 47%;
+    }
+
+    .one-half-phone.column,
+    .one-half-tablet.column {
+        width: 47%;
+    }
+
+    .one-third-phone.column,
+    .one-third-tablet.column {
+        width: 30.33%;
+    }
+
+    .two-third-phone.column,
+    .two-third-tablet.column {
+        width: 63.67%;
+    }
+
+    .one-fourth-phone.column,
+    .one-fourth-tablet.column {
+        width: 22%;
+    }
+
+    .three-fourth-phone.column,
+    .three-fourth-tablet.column {
+        width: 72%;
+    }
+
+    .one-sixth-phone.column,
+    .one-sixth-tablet.column {
+        width: 13.67%;
+    }
+
+    .five-sixth-phone.column,
+    .five-sixth-tablet.column {
+        width: 80.33%;
+    }
+
+    .one-eighth-phone.column,
+    .one-eighth-tablet.column {
+        width: 9.5%;
+    }
+
+    .seven-eighth-phone.column,
+    .seven-eighth-tablet.column {
+        width: 84.5%;
+    }
+
+    // display
+    .display-tablet {
+        display: inline-block !important;
+    }
+}
+
+// laptop
+@media (min-width: 1000px) and (max-width: 1499px) {
+
+    // container
+    .container {
+        width: 85%;
+    }
+
+    // column
+    // (auto 1 phone, 1/2 tablet, 1/3 laptop, 1/4 desktop)
+    .fluid.column {
+        width: 30.33%;
+    }
+
+    .one-half-phone.column,
+    .one-half-tablet.column,
+    .one-half-laptop.column {
+        width: 47%;
+    }
+
+    .one-third-phone.column,
+    .one-third-tablet.column,
+    .one-third-laptop.column {
+        width: 30.33%;
+    }
+
+    .two-third-phone.column,
+    .two-third-tablet.column,
+    .two-third-laptop.column {
+        width: 63.67%;
+    }
+
+    .one-fourth-phone.column,
+    .one-fourth-tablet.column,
+    .one-fourth-laptop.column {
+        width: 22%;
+    }
+
+    .three-fourth-phone.column,
+    .three-fourth-tablet.column,
+    .three-fourth-laptop.column {
+        width: 72%;
+    }
+
+    .one-sixth-phone.column,
+    .one-sixth-tablet.column,
+    .one-sixth-laptop.column {
+        width: 13.67%;
+    }
+
+    .five-sixth-phone.column,
+    .five-sixth-tablet.column,
+    .five-sixth-laptop.column {
+        width: 80.33%;
+    }
+
+    .one-eighth-phone.column,
+    .one-eighth-tablet.column,
+    .one-eighth-laptop.column {
+        width: 9.5%;
+    }
+
+    .seven-eighth-phone.column,
+    .seven-eighth-tablet.column,
+    .seven-eighth-laptop.column {
+        width: 84.5%;
+    }
+
+    // display
+    .display-laptop {
+        display: inline-block !important;
+    }
+}
+
+// desktop
+@media (min-width: 1500px) {
+
+    // container
+    .container {
+        width: 80%;
+    }
+
+    // column
+    // (auto 1 phone, 1/2 tablet, 1/3 laptop, 1/4 desktop)
+    .fluid.column {
+        width: 22%;
+    }
+
+    .one-half-phone.column,
+    .one-half-tablet.column,
+    .one-half-laptop.column,
+    .one-half-desktop.column {
+        width: 47%;
+    }
+
+    .one-third-phone.column,
+    .one-third-tablet.column,
+    .one-third-laptop.column,
+    .one-third-desktop.column {
+        width: 30.33%;
+    }
+
+    .two-third-phone.column,
+    .two-third-tablet.column,
+    .two-third-laptop.column,
+    .two-third-desktop.column {
+        width: 63.67%;
+    }
+
+    .one-fourth-phone.column,
+    .one-fourth-tablet.column,
+    .one-fourth-laptop.column,
+    .one-fourth-desktop.column {
+        width: 22%;
+    }
+
+    .three-fourth-phone.column,
+    .three-fourth-tablet.column,
+    .three-fourth-laptop.column,
+    .three-fourth-desktop.column {
+        width: 72%;
+    }
+
+    .one-sixth-phone.column,
+    .one-sixth-tablet.column,
+    .one-sixth-laptop.column,
+    .one-sixth-desktop.column {
+        width: 13.67%;
+    }
+
+    .five-sixth-phone.column,
+    .five-sixth-tablet.column,
+    .five-sixth-laptop.column,
+    .five-sixth-desktop.column {
+        width: 80.33%;
+    }
+
+    .one-eighth-phone.column,
+    .one-eighth-tablet.column,
+    .one-eighth-laptop.column,
+    .one-eighth-desktop.column {
+        width: 9.5%;
+    }
+
+    .seven-eighth-phone.column,
+    .seven-eighth-tablet.column,
+    .seven-eighth-laptop.column,
+    .seven-eighth-desktop.column {
+        width: 84.5%;
+    }
+
+    // display
+    .display-desktop {
+        display: inline-block !important;
+    }
+}
+
+
+
+
+/*
+// column-offset
+.one-half-phone--offset.column,
+.one-half-tablet--offset.column,
+.one-half-laptop--offset.column,
+.one-half-desktop--offset.column {
+    margin-left: 51.5%;
+    display: none !important;
+}
+
+.one-third-phone--offset.column,
+.one-third-tablet--offset.column,
+.one-third-laptop--offset.column,
+.one-third-desktop--offset.column {
+    margin-left: 34.83%;
+    display: none !important;
+}
+
+.two-third-phone--offset.column,
+.two-third-tablet--offset.column,
+.two-third-laptop--offset.column,
+.two-third-desktop--offset.column {
+    margin-left: 68.17%;
+    display: none !important;
+}
+
+.one-fourth-phone--offset.column,
+.one-fourth-tablet--offset.column,
+.one-fourth-laptop--offset.column,
+.one-fourth-desktop--offset.column {
+    margin-left: 26.5%;
+    display: none !important;
+}
+
+// one-half middle
+.three-fourth-phone--offset.column,
+.three-fourth-tablet--offset.column,
+.three-fourth-laptop--offset.column,
+.three-fourth-desktop--offset.column {
+    margin-left: 76.5%;
+    display: none !important;
+}
+
+.one-sixth-phone--offset.column,
+.one-sixth-tablet--offset.column,
+.one-sixth-laptop--offset.column,
+.one-sixth-desktop--offset.column {
+    margin-left: 18.17%;
+    display: none !important;
+}
+
+// two-third middle
+.one-eighth-phone--offset.column,
+.one-eighth-tablet--offset.column,
+.one-eighth-laptop--offset.column,
+.one-eighth-desktop--offset.column {
+    margin-left: 14%;
+    display: none !important;
+}
+
+*/

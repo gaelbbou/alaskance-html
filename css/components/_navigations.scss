@@ -1,0 +1,115 @@
+/* BASE ============================================================ */
+// ! <select> are for forms / dropdowns are for navs
+// ! nav horizontal
+nav {
+    ul.nav-horizontal {
+        text-align: left;
+
+        li {
+            display: inline-block;
+            margin-left: $b32;
+            margin-right: $b32;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            button {
+                margin: 0;
+            }
+        }
+    }
+}
+
+// ! nav vertical
+nav {
+    ul.nav-vertical {
+        text-align: left;
+
+        li {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: $b8;
+            margin-bottom: $b8;
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
+
+// ! nav dropdown hover
+nav {
+    ul.nav-dropdown-hover-content {
+        display: none;
+        position: absolute;
+        background-color: $color-theme;
+        min-width: 160px;
+        border-radius: $setting-radius--soft;
+        box-shadow: $setting-shadow--soft;
+        z-index: 2;
+        margin-left: -$b16;
+        overflow: hidden;
+
+        li {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        a {
+            padding: $b8 $b16;
+            display: block;
+
+            &:hover {
+                background-color: $color-base--background;
+            }
+        }
+
+        a.link {
+            transition: none;
+        }
+    }
+
+    .nav-dropdown-hover:hover ul.nav-dropdown-hover-content {
+        display: block;
+    }
+}
+
+// ! nav dropdown click
+nav {
+    ul.nav-dropdown-click-content {
+        display: none;
+
+        li {
+            margin-left: $b16;
+
+            &:first-of-type {
+                margin-top: $b8;
+            }
+        }
+    }
+}
+
+// ! nav icon-caret
+nav {
+    ul {
+        li {
+            svg.icon.icon-tag {
+                margin-top: -4px;
+                margin-left: 12px;
+                vertical-align: middle;
+            }
+        }
+    }
+}

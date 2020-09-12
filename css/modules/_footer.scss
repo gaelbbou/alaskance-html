@@ -1,0 +1,11 @@
+
+footer {
+	padding-top: $b32;
+    padding-bottom: $b32;
+    h5 { margin: 0 }
+
+	.footer-line {
+        border-bottom: 1px solid $color-base--background;
+        margin-bottom: 23px;
+    }
+}

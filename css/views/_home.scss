@@ -1,0 +1,44 @@
+#home {
+    .tradingview-widget-container {
+        background-color: rgba(0, 0, 0, 0.64);
+        border-radius: $setting-radius--soft;
+        // max-width: 240px;
+        max-height: 88px;
+        height: 88px;
+        display: inline-block;
+        // margin-top: $b32;
+        margin-left: $b16;
+        margin-right: $b16;
+    }
+
+    .tradingview-widget-container-2 {
+        div#tradingview_507af {
+            div {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    }
+
+    #home-hero {
+        padding-top: 192px;
+        background-image: url("../assets/images/img-home-hero-earth@1x.jpg");
+        background-size: auto 512px;
+        background-attachment: scroll;
+        background-position: center 96px;
+        background-repeat: no-repeat;
+
+        .home-hero-title {
+
+            p {
+                color: $color-base--description;
+            }
+
+        }
+    }
+
+}
+
+
+
+/* RESPONSIVE ============================================================ */
